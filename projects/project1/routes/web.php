@@ -12,11 +12,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [IndexController::class, 'index'])->name('index');
 
 // Admin
-Route::name('admin.')->group(function () {
-    Route::get('/admin', [DashboardController::class, 'index'])->name('index');
-    Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::name('admin.')->prefix('admin')->group(function () {
+    Route::get('/', [DashboardController::class, 'index'])->name('index');
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
     Route::name('person.')->prefix('person')->group(function () {
+        Route::get('/', [PersonController::class, 'index']);
         Route::get('index', [PersonController::class, 'index'])->name('index');
         Route::match(['get', 'post'], 'data', [PersonController::class, 'data'])->name('data');
         Route::get('create', [PersonController::class, 'create'])->name('create');
@@ -45,7 +46,6 @@ Route::name('admin.')->group(function () {
             });
         });
     });
-
 });
 
 // Other
