@@ -1,0 +1,17 @@
+{
+    "sProcessing": "<img src=\"/template/admin/img/loading.gif\" />",
+    "sLengthMenu": "_MENU_ Kayıt Gösteriliyor",
+    "sZeroRecords": "Eşleşen Kayıt Bulunmadı",
+    "sInfo": "_START_ - _END_ Gösteriliyor. Toplam: _TOTAL_ Kayıt ",
+    "sInfoEmpty": "Kayıt Yok",
+    "sInfoFiltered": "( _MAX_ Kayıt İçerisinden Bulunan)",
+    "sInfoPostFix": "",
+    "sSearch": "Bul:",
+    "sUrl": "",
+    "oPaginate": {
+        "sFirst": "İlk",
+        "sPrevious": "<i class=\"typcn typcn-chevron-left\"></i>",
+        "sNext": "<i class=\"typcn typcn-chevron-right\"></i>",
+        "sLast": "Son"
+    }
+}
